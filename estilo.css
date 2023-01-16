@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.headerr {
+    grid-area: headerr;
+    padding: 2%;
+}
+
+.logo {
+    font-size: 1.5em;
+    padding: 3%;
+}
+
+.mainn {
+    grid-area: mainn;
+    padding: 4% 50% 4% 4%;
+}
+
+.mainn h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mainn p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 7px;
+    outline: none;
+}
+
+.input-nome {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.input-email {
+    width: 60%;
+}
+
+.formm button {
+    width: 19%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: #3b5a9c;
+    color: white;
+}
+
+input:focus {
+    border-color: aqua;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: #496893;
+}
+
+.footerr {
+    grid-area: footerr;
+    padding: 5%;
+}
+
+.footerr span {
+    color: white;
+    font-size: 1.2em;
+}
+
+.container {
+    height: 100%;
+    grid-template:
+    "headerr"  0.5fr
+    "mainn" 3fr
+    "footerr" 0.5fr
+    / 100%;
+    background: url('https://img.freepik.com/fotos-premium/rapaz-sozinho-em-uma-montanha-olhando-o-horizonte_117586-151.jpg?w=740');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
